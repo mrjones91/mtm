@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import logo from './mtm.png';
 import './App.css';
 
 import {
@@ -26,12 +27,14 @@ class App extends Component {
       <HashRouter>
       <div className="App">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet"/>
-        <header className="App-header">
-          <img src="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/19665456_1527911033912745_5462544805129159343_n.jpg?oh=f031244e1efb4c9bf35af8c0bc1cbc17&oe=5A9826C5" className="App-logo" alt="logo" />
+        {/* <header className="App-header">
+          {// <img src="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/19665456_1527911033912745_5462544805129159343_n.jpg?oh=f031244e1efb4c9bf35af8c0bc1cbc17&oe=5A9826C5" className="App-logo" alt="logo" /> }
+          <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Moore Than Meals</h1>
-        </header>
+        </header> */}
 
         <ul className="header">
+            <img src={logo} className="App-logo" alt="logo" />
             <li><NavLink exact to="/">Order Now</NavLink></li>
             <li><NavLink to="/about">About</NavLink></li>
           
