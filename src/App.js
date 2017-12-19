@@ -9,17 +9,17 @@ import {
   HashRouter
 } from "react-router-dom";
 
-import AppBar from 'material-ui/AppBar';
+//import AppBar from 'material-ui/AppBar';
 
 import Menu from './Menu';
 import About from './About';
 
-let appBarStyle = {
-    backgroundColor: "rgb(180, 39, 39)",
-    color: "white"
-}
+// let appBarStyle = {
+//     backgroundColor: "rgb(180, 39, 39)",
+//     color: "white"
+// }
 
-let currentPage = "Order Now";
+// let currentPage = "Order Now";
 
 class App extends Component {
   render() {
@@ -34,10 +34,12 @@ class App extends Component {
         </header> */}
 
         <ul className="header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <li><NavLink exact to="/">Order Now</NavLink></li>
-            <li><NavLink to="/about">About</NavLink></li>
-          
+            <div><img src={logo} className="App-logo" alt="logo" /></div>
+            <div><h3 className="header-title">MTMeals</h3></div>
+            <div className="nav">
+              <li><NavLink exact to="/">Order Now</NavLink></li>
+              <li><NavLink to="/about">About</NavLink></li>
+            </div>
         </ul>
 
         {/* <AppBar style={appBarStyle} 

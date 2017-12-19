@@ -4,8 +4,10 @@
 
 .App-logo {
   /* animation: App-logo-spin infinite 20s linear; */
-  height: 120px;
+  height: 25vh;
   vertical-align: bottom;
+  position: absolute;
+  left: 0;
 }
 
 .App-header {
@@ -27,6 +29,23 @@
   font-size: large;
 }
 
+.container {
+  width: 80%;
+  margin-left: 10%;
+}
+
+@media screen and (max-width: 680px) {
+  .header-title {
+    display: none;
+  }
+}
+@media screen and (min-width: 681px) {
+  .header-title {
+    display: inline-flex;
+    vertical-align: text-bottom;
+    /* margin-top: 25%; */
+  }
+}
 
 
 @keyframes App-logo-spin {
