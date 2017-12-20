@@ -15,12 +15,30 @@ function sendEmail() {
   console.log('sent');
 }
 
+function send() {
+  $.ajax({
+    url: "https://formspree.io/you@email.com", 
+    method: "POST",
+    data: {message: "hello!"},
+    dataType: "json"
+});
+
+  //let xhr = new XMLHttpRequest();
+  //xhr.open('POST', 'https://formspree.io/epicmrjones', true, )
+}
+
 class Menu extends Component {
   render() {
     return (
         <div>
             Menu
-
+            <div>
+            <form action="https://formspree.io/epicmrjones@gmail.com" method="POST">
+              <input type="text" name="name"/>
+              <input type="email" name="_replyto"/>
+              <input type="submit" value="Send"/>
+            </form>
+            </div>
             <div>
               <Paper className="menu-item" zDepth={5}>
                 <img src="https://cdn2.tmbi.com/TOH/Images/Photos/37/1200x1200/exps23273_CW163681C12_11_2b.jpg" alt="Menu item" onClick={sendEmail}/>
