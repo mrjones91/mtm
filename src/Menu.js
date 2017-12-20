@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import Paper from 'material-ui/Paper';
 
-const paperStyle = {
-  height: 300,
-  width: 300,
-  margin: 20,
-  textAlign: 'center',
-  display: 'inline-block',
-};
-const imgStyle = {
-  width: 260,
-  height: 260,
-  margin: 20,
-  textAlign: 'center'
+import Email from './smtp'
+
+function sendEmail() {
+
+  Email.send("daniel@dij.io",
+  "epicmrjones@gmail.com",
+  "This is a subject",
+  "this is the body",
+  {token: "01b132f3-d101-4dfb-91cc-393bec2fe88e"});
+  console.log(Email);
+  console.log(Email.send);  
+  console.log('sent');
 }
 
 class Menu extends Component {
@@ -22,16 +22,17 @@ class Menu extends Component {
             Menu
 
             <div>
-              <Paper style={paperStyle} zDepth={5}>
-                <img src="https://cdn2.tmbi.com/TOH/Images/Photos/37/1200x1200/exps23273_CW163681C12_11_2b.jpg" style={imgStyle} alt="Menu item"/>
+              <Paper className="menu-item" zDepth={5}>
+                <img src="https://cdn2.tmbi.com/TOH/Images/Photos/37/1200x1200/exps23273_CW163681C12_11_2b.jpg" alt="Menu item" onClick={sendEmail}/>
               </Paper>
-              <Paper style={paperStyle} zDepth={5}>
-                <img src="https://i.pinimg.com/originals/62/ab/d3/62abd386f018d71d3706245fd7d81c92.jpg" style={imgStyle} alt="Menu item"/>
+              <Paper className="menu-item" zDepth={5}>
+                <img src="https://i.pinimg.com/originals/62/ab/d3/62abd386f018d71d3706245fd7d81c92.jpg" alt="Menu item"/>
               </Paper>
-              <Paper style={paperStyle} zDepth={5}>
-                <img src="http://www.seriouseats.com/images/2017/04/20170429-one-pot-vegetarian-dinners-recipes-roundup-14.jpg" style={imgStyle} alt="Menu item"/>
+              <Paper className="menu-item" zDepth={5}>
+                <img src="http://www.seriouseats.com/images/2017/04/20170429-one-pot-vegetarian-dinners-recipes-roundup-14.jpg" alt="Menu item"/>
               </Paper>
             </div>
+           
         </div>
     );
   }

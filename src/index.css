@@ -52,3 +52,17 @@ ul.header li a {
   background-color: white/*#0099FF*/ !important;
   color: black !important;
 }
+
+.menu-item {
+  height: 300px;
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  display: inline-block;
+}
+.menu-item img {
+  width: 260px;
+  height: 260px;
+  margin: 20px;
+  text-align: center;
+}
