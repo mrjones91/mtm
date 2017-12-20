@@ -34,8 +34,9 @@ class App extends Component {
         </header> */}
 
         <ul className="header">
-            <div><img src={logo} className="App-logo" alt="logo" /></div>
-            <div><h3 className="header-title">MTMeals</h3></div>
+            <div><img src={logo} className="App-logo" alt="logo" />
+            </div>
+            <div><h3 className="header-title">Moore Than Meals</h3></div>
             <div className="nav">
               <li><NavLink exact to="/">Order Now</NavLink></li>
               <li><NavLink to="/about">About</NavLink></li>

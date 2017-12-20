@@ -7,7 +7,7 @@
   height: 25vh;
   vertical-align: bottom;
   position: absolute;
-  left: 0;
+  left: 10%;
 }
 
 .App-header {
@@ -43,7 +43,13 @@
   .header-title {
     display: inline-flex;
     vertical-align: text-bottom;
+    left: 40%;
     /* margin-top: 25%; */
+  }
+}
+@media screen and (min-width: 950px) {
+  .header-title {
+    left: 45%;
   }
 }
 
