@@ -25,6 +25,16 @@ function send() {
 
   //let xhr = new XMLHttpRequest();
   //xhr.open('POST', 'https://formspree.io/epicmrjones', true, )
+  //xhr.send()
+  /*
+  var oReq = new XMLHttpRequest();
+oReq.onload = function (e) {
+    results.innerHTML = e.target.response.message;
+};
+oReq.open('GET', e.target.dataset.url + '?' + new Date().getTime(), true);
+oReq.responseType = 'json';
+oReq.send();
+*/
 }
 
 class Menu extends Component {
